@@ -14,7 +14,7 @@ if shortMonth in MONTHS:
         formattedDay = str(day).zfill(2)
         formattedDate = f"{formattedDay}-{shortMonth}"
 
-        holiday=holidays.get(formattedDate)
+        holiday = holidays.get(formattedDate)
 
         if holiday == None:
             print(f"I'm sorry. {formattedDate} is not a holiday.")
